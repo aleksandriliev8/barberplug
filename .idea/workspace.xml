@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb10f657-b7af-4e40-b6fc-8324d9262884" name="Changes" comment="Removed inital React FE data + added barberplug icon in tab section.">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/home/hero-home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/home/home-frist.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/home/home-second.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/home/home-third.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo/barberplug_logo_transparent.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/barberplug_logo.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/logo/barberplug_logo.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
@@ -18,6 +13,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +48,7 @@
     "git-widget-placeholder": "frontend",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/1/Desktop/barberplug/frontend/src/assets/home",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -59,11 +62,11 @@
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\barberplug\frontend\src\components\Footer" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\home" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\logo" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\pages\Home" />
-      <recent name="C:\Users\1\Desktop\barberplug\frontend\src\components\Navbar" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,7 +102,7 @@
       <updated>1781035894062</updated>
       <workItem from="1781035898057" duration="29000" />
       <workItem from="1781470633880" duration="1945000" />
-      <workItem from="1782653866053" duration="7132000" />
+      <workItem from="1782653866053" duration="15433000" />
     </task>
     <task id="LOCAL-00003" summary="Removed inital React FE data + added barberplug icon in tab section.">
       <option name="closed" value="true" />

@@ -24,7 +24,7 @@ function Navbar() {
             )}
             <div className="nav-top">
                 <div className="nav-socials">
-                    <a href="#" aria-label="Instagram">
+                    <a href="https://www.instagram.com/barberplug.bul/" target="_blank" aria-label="Instagram">
                         <FaInstagram />
                     </a>
                     <a href="#" aria-label="Facebook">
