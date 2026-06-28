@@ -1,6 +1,26 @@
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    transform: translateY(0);
+    transition: background 0.3s ease-in-out;
+}
+
+nav.scrolled {
     background: #000;
-    padding: 0 2rem;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .nav-top {
@@ -11,8 +31,16 @@ nav {
 }
 
 .nav-socials {
+    flex: 1;
     display: flex;
     gap: 20px;
+    padding-left: 2rem;
+}
+
+.nav-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-socials a {
@@ -28,15 +56,16 @@ nav {
 }
 
 .nav-right {
-    width: 100px;
+    flex: 1;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 7rem;
     padding: 14px 0;
+    font-weight: 400;
 }
 
 .nav-links a {
@@ -47,5 +76,33 @@ nav {
 }
 
 .nav-links a:hover {
+    opacity: 0.7;
+}
+
+.nav-banner {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    font-size: 0.70rem;
+    letter-spacing: 2px;
+}
+
+.nav-banner p {
+    margin: 0;
+}
+
+.nav-banner span {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+}
+
+.nav-banner a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-banner a:hover {
     opacity: 0.7;
 }

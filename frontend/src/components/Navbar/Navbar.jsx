@@ -1,10 +1,27 @@
 import './Navbar.css'
-import logo from '../../assets/barberplug_logo.PNG'
+import logo from '../../assets/logo/barberplug_logo.PNG'
+import logoTransparent from '../../assets/logo/barberplug_logo_transparent.PNG'
 import { FaInstagram, FaFacebook, FaXTwitter } from 'react-icons/fa6'
+import { useState, useEffect } from 'react'
 
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
-        <nav>
+        <nav className={scrolled ? 'scrolled' : ''}>
+            {!scrolled && (
+                <div className="nav-banner">
+                    <p><b>TO BOOK APPOINTMENT IN SOFIA </b><span>|</span> <a href="https://www.fresha.com/bg" target="_blank">CLICK HERE</a></p>
+                </div>
+            )}
             <div className="nav-top">
                 <div className="nav-socials">
                     <a href="#" aria-label="Instagram">
@@ -19,8 +36,8 @@ function Navbar() {
                 </div>
 
                 <div className="nav-logo">
-                    <a href="#" aria-label="Barberplug">
-                        <img src={logo} alt="Barberplug" height="38px"/>
+                    <a href="http://localhost:5173/" aria-label="Barberplug">
+                        <img src={scrolled ? logo : logoTransparent} alt="Barberplug" height="38px"/>
                     </a>
                 </div>
 
@@ -30,8 +47,9 @@ function Navbar() {
             <div className="nav-links">
                 <a href="#">Learn More</a>
                 <a href="#">Shop</a>
+                <a href="#">Gallery</a>
                 <a href="#">Location</a>
-                <a href="#">Book Now</a>
+                <a href="https://www.fresha.com/bg" target="_blank">Book Now</a>
                 <a href="#">Help</a>
             </div>
         </nav>
