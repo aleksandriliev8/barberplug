@@ -3,6 +3,7 @@ import logo from '../../assets/logo/barberplug_logo.PNG'
 import logoTransparent from '../../assets/logo/barberplug_logo_transparent.PNG'
 import { FaInstagram, FaFacebook, FaXTwitter } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(false)
@@ -36,9 +37,9 @@ function Navbar() {
                 </div>
 
                 <div className="nav-logo">
-                    <a href="http://localhost:5173/" aria-label="Barberplug">
+                    <Link to="/" aria-label="Barberplug">
                         <img src={scrolled ? logo : logoTransparent} alt="Barberplug" height="38px"/>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="nav-right"></div>
@@ -48,7 +49,7 @@ function Navbar() {
                 <a href="#">Learn More</a>
                 <a href="#">Shop</a>
                 <a href="#">Gallery</a>
-                <a href="#">Location</a>
+                <Link to="/location" target="_blank" rel="noopener noreferrer">Location</Link>
                 <a href="https://www.fresha.com/bg" target="_blank">Book Now</a>
                 <a href="#">Help</a>
             </div>

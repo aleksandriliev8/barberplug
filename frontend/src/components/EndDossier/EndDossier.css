@@ -1,0 +1,93 @@
+.end-dossier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 19rem 2rem 19rem;
+    background: #090909;
+}
+
+.end-dossier__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.32em;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    margin: 0 0 3rem;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.end-dossier__eyebrow::before,
+.end-dossier__eyebrow::after {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.end-dossier__heading {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 3.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.end-dossier__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.end-dossier__btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.7rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.end-dossier__btn--primary {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.end-dossier__btn--primary:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.end-dossier__btn--outline {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.end-dossier__btn--outline:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.end-dossier__arrow {
+    margin-left: 0.5rem;
+}
+
+.end-dossier__copy {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    margin: 0;
+}
