@@ -1,0 +1,73 @@
+.dossier {
+    position: relative;
+    padding: 22rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dossier__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.32em;
+    color: rgba(255, 255, 255, 0.28);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+    top: auto;
+}
+
+.dossier__eyebrow::before,
+.dossier__eyebrow::after {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.dossier__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.dossier__hr {
+    width: 25rem;
+    height: .1rem;
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 5rem;
+    transform: scaleX(0);
+    transform-origin: center;
+    will-change: transform;
+}
+
+.dossier__line-wrap {
+    overflow: hidden;
+}
+
+.dossier__line {
+    display: block;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    transform: translateY(110%);
+    will-change: transform;
+}
+
+.dossier__line--1 { color: rgba(255, 255, 255, 1.00); }
+.dossier__line--2 { color: rgba(255, 255, 255, 0.55); }
+.dossier__line--3 { color: rgba(255, 255, 255, 0.30); }
+
+@media (prefers-reduced-motion: reduce) {
+    .dossier__line {
+        transition: none;
+        transform: translateY(0);
+    }
+}
