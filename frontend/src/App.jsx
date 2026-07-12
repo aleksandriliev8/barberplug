@@ -1,7 +1,13 @@
-import Home from './pages/Home/Home.jsx';
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home.jsx'
+import Location from './pages/Location/Location.jsx'
+
 function App() {
   return (
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
   )
 }
 
