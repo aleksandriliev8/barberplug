@@ -4,6 +4,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+html, body {
     margin: 0;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.06);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: transparent;
 }

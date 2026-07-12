@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb10f657-b7af-4e40-b6fc-8324d9262884" name="Changes" comment="Removed inital React FE data + added barberplug icon in tab section.">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+    <list default="true" id="bb10f657-b7af-4e40-b6fc-8324d9262884" name="Changes" comment="Add DossierSection with scroll-driven text reveal animation">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/locations/sofia_wallpaper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/EndDossier/EndDossier.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/EndDossier/EndDossier.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LocationCards/SofiaCard/SofiaCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LocationCards/SofiaCard/SofiaCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,35 +39,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "frontend",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1/Desktop/barberplug/frontend/src/assets/home",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/location&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/Desktop/barberplug/frontend/src/assets/locations&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\locations" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\home" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\locations" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\components\Footer" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\home" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets\logo" />
       <recent name="C:\Users\1\Desktop\barberplug\frontend\src\assets" />
-      <recent name="C:\Users\1\Desktop\barberplug\frontend\src\pages\Home" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -103,6 +105,15 @@
       <workItem from="1781035898057" duration="29000" />
       <workItem from="1781470633880" duration="1945000" />
       <workItem from="1782653866053" duration="15433000" />
+      <workItem from="1782744076216" duration="12602000" />
+      <workItem from="1782822394701" duration="10122000" />
+      <workItem from="1782849203269" duration="4542000" />
+      <workItem from="1782891046745" duration="14567000" />
+      <workItem from="1782970287221" duration="5466000" />
+      <workItem from="1783021103422" duration="3249000" />
+      <workItem from="1783238658054" duration="3278000" />
+      <workItem from="1783279406448" duration="1777000" />
+      <workItem from="1783837710872" duration="4796000" />
     </task>
     <task id="LOCAL-00003" summary="Removed inital React FE data + added barberplug icon in tab section.">
       <option name="closed" value="true" />
@@ -112,7 +123,31 @@
       <option name="project" value="LOCAL" />
       <updated>1781475883689</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Location page structure + routing">
+      <option name="closed" value="true" />
+      <created>1783856878120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783856878120</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bulgaria map with Sofia pin">
+      <option name="closed" value="true" />
+      <created>1783856897843</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783856897843</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add DossierSection with scroll-driven text reveal animation">
+      <option name="closed" value="true" />
+      <created>1783856915291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783856915291</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +156,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Vite React setup" />
     <MESSAGE value="Removed inital React FE data + added barberplug icon in tab section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed inital React FE data + added barberplug icon in tab section." />
+    <MESSAGE value="Added a CLAUDE.md file" />
+    <MESSAGE value="Location page structure + routing" />
+    <MESSAGE value="Bulgaria map with Sofia pin" />
+    <MESSAGE value="Add DossierSection with scroll-driven text reveal animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add DossierSection with scroll-driven text reveal animation" />
   </component>
 </project>
