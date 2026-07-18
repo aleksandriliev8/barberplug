@@ -15,10 +15,10 @@
 
 .loc-card__bg-number {
     position: absolute;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     left: -1rem;
-    font-size: 35vw;
+    font-size: 50vw;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.08);
     line-height: 1;
@@ -34,4 +34,186 @@
     background: rgba(9, 9, 9, 1);
     z-index: 1;
     pointer-events: none;
+}
+
+.loc-card__content {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    pointer-events: none;
+    align-items: stretch;
+}
+
+.loc-card__left {
+    display: flex;
+    flex-direction: column;
+    padding: 20rem 1rem;
+    gap: 0.5rem;
+    width: 42%;
+}
+
+.loc-card__salons-header {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.loc-card__line-long {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.loc-card__line-short {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
+    min-width: 5rem;
+}
+
+.loc-card__line--short {
+    flex: 0;
+    width: 30px;
+}
+
+.loc-card__salon-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    pointer-events: auto;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.loc-card__salon-num {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.loc-card__salon-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.loc-card__salon-name {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.loc-card__salon-book {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.loc-card__salon-row:hover .loc-card__salon-num {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.65rem;
+}
+
+.loc-card__salon-row:hover .loc-card__salon-name {
+    color: #fff;
+}
+
+.loc-card__salon-row:hover .loc-card__salon-book {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.loc-card__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20rem 0;
+    text-align: right;
+    max-width: 50%;
+}
+
+.loc-card__country-header {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+.loc-card__city-name {
+    padding: 1rem 0 3rem;
+    font-size: clamp(4rem, 9vw, 7.5rem);
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.loc-card__divider {
+    width: 45vw;
+    margin-right: 0;
+    margin-left: auto;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.40);
+}
+
+.loc-card__tagline {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+    padding: 1rem;
+}
+
+.loc-card__coords {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.loc-card__coords > div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: baseline;
+}
+
+.loc-card__coord-label {
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    width: 6rem;
+}
+
+.loc-card__coord-value {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 6rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.saloon-number {
+    color: rgba(255, 255, 255, 1);
 }

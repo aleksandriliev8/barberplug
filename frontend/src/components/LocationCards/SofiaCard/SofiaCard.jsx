@@ -59,6 +59,40 @@ const SofiaCard = forwardRef(function SofiaCard(props, ref) {
             ></div>
             <div className="loc-card__overlay" ref={overlayRef}></div>
             <div className="loc-card__bg-number">01</div>
+
+            <div className="loc-card__content">
+                <div className="loc-card__left">
+                    <div className="loc-card__salons-header">
+                        <span>Salons</span>
+                        <span className="loc-card__line-long"></span>
+                        <span>01</span>
+                    </div>
+                    <div className="loc-card__salon-divider"></div>
+                    <a href="https://www.fresha.com/bg" target="_blank" rel="noopener noreferrer" className="loc-card__salon-row">
+                        <span className="loc-card__salon-num">01</span>
+                        <span className="loc-card__salon-name">Barberplug Sofia</span>
+                        <span className="loc-card__salon-book">Book →</span>
+                    </a>
+                    <div className="loc-card__salon-divider"></div>
+                </div>
+
+                <div className="loc-card__right">
+                    <div className="loc-card__country-header">
+                        <span>Bulgaria</span>
+                        <span className="loc-card__line-short"></span>
+                        <span>01</span>
+                        <span className="loc-card__line-short loc-card__line--short"></span>
+                        <span className="saloon-number">01</span>
+                    </div>
+                    <h2 className="loc-card__city-name">Sofia</h2>
+                    <div className="loc-card__divider" />
+                    <p className="loc-card__tagline">Capital craft. Premium finish.</p>
+                    <div className="loc-card__coords">
+                        <div><span className="loc-card__coord-label">Latitude</span><span className="loc-card__coord-value">42.6977° N</span></div>
+                        <div><span className="loc-card__coord-label">Longitude</span><span className="loc-card__coord-value">23.3219° E</span></div>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 });

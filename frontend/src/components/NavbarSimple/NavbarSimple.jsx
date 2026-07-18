@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function NavbarSimple() {
     return (
         <nav className="navbar-simple">
-            <Link to="/">
+            <Link to="/" target="_blank">
                 <img src={logoTransparent} alt="Barberplug" height="38px" />
             </Link>
         </nav>
