@@ -55,7 +55,7 @@ export default function EndDossier() {
                 <a href="https://www.fresha.com/bg" target="_blank" className="end-dossier__btn end-dossier__btn--primary">
                     Book Now <span className="end-dossier__arrow">→</span>
                 </a>
-                <a href="/" className="end-dossier__btn end-dossier__btn--outline">
+                <a href="/" target="_blank" className="end-dossier__btn end-dossier__btn--outline">
                     Barberplug.com
                 </a>
             </div>
