@@ -1,6 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import heroImg from '../../assets/home/hero-home.jpg'
 import photo1 from '../../assets/home/home-frist.jpg'
 import photo2 from '../../assets/home/home-second.jpg'
 import photo3 from '../../assets/home/home-third.jpg'
