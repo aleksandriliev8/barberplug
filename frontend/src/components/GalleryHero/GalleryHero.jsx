@@ -4,6 +4,7 @@ import './GalleryHero.css';
 
 export default function GalleryHero() {
     const [showEffect, setShowEffect] = useState(false);
+    const [effectReady, setEffectReady] = useState(false);
     const eyebrowRef = useRef(null);
     const titleRef = useRef(null);
     const hrRef = useRef(null);
@@ -47,13 +48,19 @@ export default function GalleryHero() {
     }, []);
 
     useEffect(() => {
-        const id = setTimeout(() => setShowEffect(true), 300);
+        const id = setTimeout(() => setShowEffect(true), 100);
         return () => clearTimeout(id);
     }, []);
 
+    useEffect(() => {
+        if (!showEffect) return;
+        const id = setTimeout(() => setEffectReady(true), 800);
+        return () => clearTimeout(id);
+    }, [showEffect]);
+
     return (
         <section className="gallery-hero">
-            <div className="gallery-hero__bg">
+            <div className={`gallery-hero__bg${effectReady ? ' gallery-hero__bg--visible' : ''}`}>
                 {showEffect && <Suspense fallback={null}>
                 <LiquidEther
                     colors={["#333333", "#aaaaaa", "#ffffff", "#999999", "#222222"]}
