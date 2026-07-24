@@ -1,0 +1,31 @@
+.gallery-grid {
+    position: relative;
+    z-index: 1;
+    background: #111;
+    padding: 2rem 2rem 4rem;
+    margin-top: -40vh;
+}
+
+.gallery-grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-grid__item {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.gallery-grid__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-grid__item:hover img {
+    transform: scale(1.05);
+}

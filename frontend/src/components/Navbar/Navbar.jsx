@@ -48,7 +48,7 @@ function Navbar() {
             <div className="nav-links">
                 <a href="#">Learn More</a>
                 <a href="#">Shop</a>
-                <a href="#">Gallery</a>
+                <Link to="/gallery">Gallery</Link>
                 <Link to="/location" target="_blank" rel="noopener noreferrer">Location</Link>
                 <a href="https://www.fresha.com/bg" target="_blank">Book Now</a>
                 <a href="#">Help</a>
