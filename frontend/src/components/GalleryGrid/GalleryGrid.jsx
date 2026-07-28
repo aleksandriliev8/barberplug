@@ -7,7 +7,7 @@ export default function GalleryGrid() {
             <div className="gallery-grid__container">
                 {images.map((src, i) => (
                     <div className="gallery-grid__item" key={i}>
-                        <img src={src} alt="" loading="lazy" />
+                        <img src={src} alt="" loading="lazy" style={i === 0 ? { objectPosition: 'top' } : undefined} />
                     </div>
                 ))}
             </div>

@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -27,5 +27,5 @@
 }
 
 .gallery-grid__item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
