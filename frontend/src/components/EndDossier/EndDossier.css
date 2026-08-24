@@ -91,3 +91,19 @@
     text-transform: uppercase;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .end-dossier {
+        padding: 8rem 1.5rem;
+    }
+
+    .end-dossier__buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .end-dossier__btn {
+        text-align: center;
+    }
+}

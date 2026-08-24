@@ -63,3 +63,28 @@
     border-top: 1px solid #222;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .location-page .map-wrapper {
+        width: 90%;
+        margin-top: 25vh;
+    }
+
+    .location-intro {
+        padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    .location-intro h1 {
+        font-size: 1.3rem;
+        margin: 2rem 0 0.8rem;
+    }
+
+    .location-intro p {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .scroll-hint {
+        margin-top: 2rem;
+    }
+}
