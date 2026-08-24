@@ -69,3 +69,14 @@ footer {
     letter-spacing: 2px;
     color: #555;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 3rem 1.5rem 0;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

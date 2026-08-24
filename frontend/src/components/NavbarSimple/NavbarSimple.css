@@ -11,3 +11,15 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .navbar-simple {
+        background: #000;
+        justify-content: flex-start;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .navbar-simple img {
+        height: 24px;
+    }
+}
