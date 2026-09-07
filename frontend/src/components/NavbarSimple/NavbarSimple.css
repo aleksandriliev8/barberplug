@@ -14,12 +14,12 @@
 
 @media (max-width: 768px) {
     .navbar-simple {
-        background: #000;
+        background: transparent;
         justify-content: flex-start;
         padding: 0.8rem 1.2rem;
     }
 
     .navbar-simple img {
-        height: 24px;
+        height: 32px;
     }
 }

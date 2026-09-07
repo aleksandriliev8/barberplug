@@ -29,7 +29,7 @@ const SofiaCard = forwardRef(function SofiaCard(props, ref) {
             const cardCenter = rect.top + cardH / 2;
             const viewportCenter = windowH / 2;
             const distFromCenter = Math.abs(cardCenter - viewportCenter) / (cardH / 2 + viewportCenter);
-            const zoomScale = 1.08 - 0.08 * (1 - distFromCenter);
+            const zoomScale = 1.2 - 0.2 * (1 - distFromCenter);
 
             bgRef.current.style.filter = `blur(${blur}px)`;
             bgRef.current.style.transform = `scale(${zoomScale})`;
