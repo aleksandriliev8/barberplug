@@ -220,27 +220,30 @@
 
 @media (max-width: 768px) {
     .loc-card {
-        height: auto;
-        min-height: 100vh;
+        height: 160svh;
+        min-height: 900px;
     }
 
     .loc-card__content {
         flex-direction: column;
-        padding: 2rem 1.5rem;
-        position: relative;
-    }
-
-    .loc-card__left {
-        width: 100%;
-        padding: 6rem 0 2rem;
+        padding: 0 6vw;
+        justify-content: center;
+        gap: 0;
     }
 
     .loc-card__right {
+        order: -1;
         width: 100%;
         max-width: 100%;
         align-items: flex-start;
         text-align: left;
-        padding: 2rem 0 4rem;
+        padding: 0 0 5vh;
+    }
+
+    .loc-card__left {
+        width: 100%;
+        padding: 0;
+        gap: 0.4rem;
     }
 
     .loc-card__divider {
@@ -254,7 +257,7 @@
     }
 
     .loc-card__country-header {
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
 
     .loc-card__tagline {
@@ -264,9 +267,59 @@
 
     .loc-card__bg-number {
         font-size: 70vw;
+        top: 50%;
+        bottom: auto;
+        left: 0;
+        transform: translateY(-50%);
     }
 
     .loc-card__line-short {
         min-width: 2rem;
+    }
+
+    .loc-card__coords {
+        gap: 0.2rem;
+    }
+
+    .loc-card__salons-header {
+        padding-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .loc-card__country-header {
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .loc-card__tagline {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .loc-card__coord-label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .loc-card__coord-value {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .loc-card__salon-num {
+        color: rgba(255, 255, 255, 0.45);
+    }
+
+    .loc-card__salon-book {
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    .loc-card__line-long,
+    .loc-card__line-short {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .loc-card__salon-divider {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .loc-card__divider {
+        background: rgba(255, 255, 255, 0.5);
     }
 }
