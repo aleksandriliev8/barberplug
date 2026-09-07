@@ -20,15 +20,17 @@ function Location() {
     return (
         <div className="location-page">
             <NavbarSimple />
-            <Map onSofiaClick={scrollToSofia} />
-            <section className="location-intro">
-                <h1>ONE CITY. ONE SHOP. NO COMPROMISES.</h1>
-                <p>TAP THE ORIGINAL · BOOK YOUR VISION</p>
+            <div className="location-hero">
+                <Map onSofiaClick={scrollToSofia} />
+                <section className="location-intro">
+                    <h1><span>ONE CITY.</span> <span>ONE SHOP.</span> <span>NO COMPROMISES.</span></h1>
+                    <p>TAP THE ORIGINAL · BOOK YOUR VISION</p>
+                </section>
                 <div className="scroll-hint">
                     <span>Scroll for the story</span>
                     <span className="arrow">↓</span>
                 </div>
-            </section>
+            </div>
             <hr/>
             <DossierSection />
             <SofiaCard ref={sofiaCardRef} />

@@ -101,6 +101,8 @@ export default function Map({ onSofiaClick }) {
                     <g className="sofia-trigger">
                         <circle cx={PIN_X} cy={PIN_Y} r={RING_R + 5} fill="transparent" className="pin-hitbox" />
                         <circle cx={PIN_X} cy={PIN_Y} r={RING_R} fill="none" stroke="white" strokeWidth="0.5" className="pin-ring" />
+                        <circle cx={PIN_X} cy={PIN_Y} r="14" fill="rgba(255,255,255,0.06)" className="pin-glow-outer" />
+                        <circle cx={PIN_X} cy={PIN_Y} r="9" fill="rgba(255,255,255,0.12)" className="pin-glow-inner" />
                         <circle cx={PIN_X} cy={PIN_Y} r="4" fill="white" className="svg-pin-dot" />
                     </g>
                 </g>
