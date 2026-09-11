@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import heroImg from '../../assets/home/hero-home.jpg'
 import photo1 from '../../assets/home/home-frist.jpg'
 import photo2 from '../../assets/home/home-second.jpg'
 import photo3 from '../../assets/home/home-third.jpg'
@@ -10,10 +11,12 @@ function Home() {
         <>
             <Navbar />
             <main>
+                <div className="hero-bg-fixed" style={{ backgroundImage: `url(${heroImg})` }}></div>
                 <section className="hero">
                     <div className="hero-text">
                         <h1>Our vision</h1>
                         <p>To be the standard gentleman's choice, offering quality, style and attention to every detail</p>
+                        <a href="#" className="btn-learn-more">LEARN MORE</a>
                     </div>
                 </section>
                 <section className="booking">

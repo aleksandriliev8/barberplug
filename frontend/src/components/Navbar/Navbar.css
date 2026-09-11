@@ -57,6 +57,27 @@ nav.scrolled {
 
 .nav-right {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.nav-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-hamburger svg {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-mobile-menu {
+    display: none;
 }
 
 .nav-links {
@@ -105,4 +126,91 @@ nav.scrolled {
 
 .nav-banner a:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    nav {
+        background: #000;
+    }
+
+    .nav-banner {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-socials {
+        display: none;
+    }
+
+    .nav-top {
+        padding: 0.7rem 0;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .nav-logo img {
+        height: 30px !important;
+    }
+
+    .nav-top {
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .nav-right {
+        flex: 0;
+        padding-right: 1.2rem;
+    }
+
+    .nav-hamburger {
+        display: block;
+    }
+
+    .nav-mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+        background: #000;
+        padding: 0 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .nav-mobile-menu--open {
+        max-height: 100vh;
+        padding: 2rem 2rem 2.5rem;
+    }
+
+    .nav-mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .nav-mobile-socials {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .nav-mobile-socials a {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-mobile-socials svg {
+        width: 18px;
+        height: 18px;
+    }
 }
