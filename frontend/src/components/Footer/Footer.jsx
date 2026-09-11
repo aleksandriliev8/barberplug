@@ -12,7 +12,7 @@ function Footer() {
                         <li><a href="#">Learn More</a></li>
                         <li><a href="#">Shop</a></li>
                         <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="#">Location</a></li>
+                        <li><a href="/location">Location</a></li>
                         <li><a href="https://www.fresha.com/bg" target="_blank">Book Now</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
