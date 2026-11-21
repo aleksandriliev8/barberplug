@@ -9,6 +9,10 @@ nav {
     transition: background 0.3s ease-in-out;
 }
 
+nav.nav-solid {
+    background: #000;
+}
+
 nav.scrolled {
     background: #000;
     animation: slideDown 0.3s ease-in-out;

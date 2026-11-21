@@ -5,7 +5,7 @@ import { FaInstagram, FaFacebook, FaXTwitter, FaBars, FaXmark } from 'react-icon
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({ solid = false }) {
     const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -18,7 +18,7 @@ function Navbar() {
     }, [])
 
     return (
-        <nav className={scrolled ? 'scrolled' : ''}>
+        <nav className={`${solid ? 'nav-solid' : ''}${scrolled ? ' scrolled' : ''}`}>
             {!scrolled && (
                 <div className="nav-banner">
                     <p><b>TO BOOK APPOINTMENT IN SOFIA </b><span>|</span> <a href="https://www.fresha.com/bg" target="_blank">CLICK HERE</a></p>
@@ -51,7 +51,7 @@ function Navbar() {
             </div>
 
             <div className="nav-links">
-                <a href="#">Learn More</a>
+                <a href="/learn-more">Learn More</a>
                 <a href="#">Shop</a>
                 <a href="/gallery">Gallery</a>
                 <a href="/location">Location</a>
@@ -60,7 +60,7 @@ function Navbar() {
             </div>
 
             <div className={`nav-mobile-menu${menuOpen ? ' nav-mobile-menu--open' : ''}`}>
-                <a href="#" onClick={() => setMenuOpen(false)}>Learn More</a>
+                <a href="/learn-more" onClick={() => setMenuOpen(false)}>Learn More</a>
                 <a href="#" onClick={() => setMenuOpen(false)}>Shop</a>
                 <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
                 <a href="/location" onClick={() => setMenuOpen(false)}>Location</a>

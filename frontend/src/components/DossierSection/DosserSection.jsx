@@ -1,23 +1,25 @@
 import { useEffect, useRef } from 'react';
 import './DosserSection.css';
 
-export default function DossierSection() {
-    const line1Ref = useRef(null);
-    const line2Ref = useRef(null);
-    const line3Ref = useRef(null);
+const DEFAULT_LINES = ['One city.', 'One shop.', 'One standard.'];
+
+export default function DossierSection({
+    eyebrow = 'A Barberplug Dossier',
+    lines = DEFAULT_LINES,
+    variant = 'dark',
+}) {
+    const lineRefs = useRef([]);
     const hrRef = useRef(null);
 
     useEffect(() => {
-        const lines = [line1Ref, line2Ref, line3Ref];
-
         const handleScroll = () => {
-            lines.forEach((ref, i) => {
-                if (!ref.current) return;
-                const rect = ref.current.getBoundingClientRect();
+            lineRefs.current.forEach((el, i) => {
+                if (!el) return;
+                const rect = el.getBoundingClientRect();
                 const windowH = window.innerHeight;
                 const start = windowH - i * 60;
                 const progress = Math.max(0, Math.min(1, (start - rect.top) / (windowH * 0.4)));
-                ref.current.style.transform = `translateY(${110 - progress * 110}%)`;
+                el.style.transform = `translateY(${110 - progress * 110}%)`;
             });
 
             if (hrRef.current) {
@@ -35,18 +37,19 @@ export default function DossierSection() {
     }, []);
 
     return (
-        <section className="dossier">
-            <p className="dossier__eyebrow">A Barberplug Dossier</p>
+        <section className={`dossier dossier--${variant}`}>
+            <p className="dossier__eyebrow">{eyebrow}</p>
             <div className="dossier__lines">
-                <div className="dossier__line-wrap">
-                    <span className="dossier__line dossier__line--1" ref={line1Ref}>One city.</span>
-                </div>
-                <div className="dossier__line-wrap">
-                    <span className="dossier__line dossier__line--2" ref={line2Ref}>One shop.</span>
-                </div>
-                <div className="dossier__line-wrap">
-                    <span className="dossier__line dossier__line--3" ref={line3Ref}>One standard.</span>
-                </div>
+                {lines.map((line, i) => (
+                    <div className="dossier__line-wrap" key={line}>
+                        <span
+                            className={`dossier__line dossier__line--${i + 1}`}
+                            ref={(el) => { lineRefs.current[i] = el; }}
+                        >
+                            {line}
+                        </span>
+                    </div>
+                ))}
             </div>
             <div className="dossier__hr" ref={hrRef}></div>
         </section>
