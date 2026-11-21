@@ -65,6 +65,26 @@
 .dossier__line--2 { color: rgba(255, 255, 255, 0.55); }
 .dossier__line--3 { color: rgba(255, 255, 255, 0.30); }
 
+/* Light variant for white pages (e.g. LearnMore) */
+.dossier--light {
+    padding: 10rem 2rem;
+}
+
+.dossier--light .dossier__eyebrow { color: rgba(0, 0, 0, 0.45); }
+
+.dossier--light .dossier__eyebrow::before,
+.dossier--light .dossier__eyebrow::after,
+.dossier--light .dossier__hr { background: rgba(0, 0, 0, 0.2); }
+
+.dossier--light .dossier__line {
+    font-size: clamp(2.2rem, 5.5vw, 5rem);
+    text-transform: uppercase;
+}
+
+.dossier--light .dossier__line--1 { color: rgba(0, 0, 0, 1.00); }
+.dossier--light .dossier__line--2 { color: rgba(0, 0, 0, 0.55); }
+.dossier--light .dossier__line--3 { color: rgba(0, 0, 0, 0.30); }
+
 @media (prefers-reduced-motion: reduce) {
     .dossier__line {
         transition: none;
@@ -79,5 +99,9 @@
 
     .dossier__hr {
         width: 80vw;
+    }
+
+    .dossier--light {
+        padding: 5rem 1.5rem;
     }
 }

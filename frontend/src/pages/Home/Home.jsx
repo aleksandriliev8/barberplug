@@ -16,7 +16,7 @@ function Home() {
                     <div className="hero-text">
                         <h1>Our vision</h1>
                         <p>To be the standard gentleman's choice, offering quality, style and attention to every detail</p>
-                        <a href="#" className="btn-learn-more">LEARN MORE</a>
+                        <a href="/learn-more" className="btn-learn-more">LEARN MORE</a>
                     </div>
                 </section>
                 <section className="booking">
